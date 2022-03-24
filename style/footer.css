@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+#footerDiv1 {
+  background-color: whitesmoke;
+  height: 100px;
+  margin-top: 5%;
+}
+#footerDiv2 {
+  height: 150px;
+  background-color: whitesmoke;
+  background-position: 0%;
+  margin-top: 5px;
+}
+#para1 {
+  text-align: center;
+  margin-top: 5px;
+  padding-top: 5px;
+}
+#footerDiv2 {
+  margin-top: 100px;
+  height: 180px;
+  display: flex;
+  background-color: whitesmoke;
+}
+#footerDiv2 > div > #icon {
+  display: flex;
+}
+#footerDiv2 > div {
+  margin-left: 80px;
+}
+#footerDiv2 > div h4 {
+  margin-left: 30px;
+  margin-top: 30%;
+}
+#footerDiv2 > div img {
+  height: 180px;
+}
+#footerDiv2 > #icon a {
+  color: black;
+  margin-left: 30px;
+}
+
+#footerDiv3 {
+  display: flex;
+  gap: 100px;
+  margin-left: 30px;
+  justify-content: space-evenly;
+}
+#footerDiv3 > div a {
+  color: red;
+}
+
+#footerDiv4 {
+  display: flex;
+  color: black;
+  justify-content: space-evenly;
+  line-height: 1;
+  padding: 2%;
+}
+#footerDiv4 > h4 {
+  display: flex;
+  color: black;
+}
+#footerDiv4 > div h4 {
+  padding-left: 15px;
+}
+
+#footerDiv4 > div > a {
+  text-decoration: none;
+  color: black;
+}
+#footerDiv4 > div > ul a {
+  text-decoration: none;
+  color: black;
+}
+#footerDiv4 > div > ul a li {
+  text-decoration: none;
+  color: black;
+  list-style: none;
+  padding-top: 7px;
+  padding-left: 15px;
+}
+#footerDiv5 {
+  display: flex;
+  background-color: black;
+  justify-content: space-evenly;
+  padding: 5%;
+  line-height: 2;
+}
+#footter5H5 {
+  color: rgb(212, 212, 212);
+}
+#footerDiv5 > div > ul a li {
+  color: rgba(196, 191, 191, 0.925);
+  text-decoration: none;
+  list-style: none;
+  padding-top: 7px;
+}
+#footerDiv5 > div > ul a {
+  text-decoration: none;
+}
+ul + select {
+  width: 300px;
+  height: 40px;
+  background-color: black;
+  color: white;
+}
+#footerDiv6 {
+  background-color: whitesmoke;
+  margin-top: 10px;
+}
+#footerDiv7 {
+  margin-top: 15px;
+  border: 1px solid black;
+  padding: 1%;
+  text-align: center;
+  line-height: 1.5;
+}
+
+#footerDiv7 > p {
+  color: red;
+}
+
+#footerDiv8 > p {
+  line-height: 30px;
+  margin-top: 2%;
+}

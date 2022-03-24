@@ -1,0 +1,200 @@
+.main {
+  width: 90%;
+  height: fit-content;
+  display: grid;
+  grid-template-columns: repeat(4, 24%);
+  grid-gap: 2%;
+}
+.product-box {
+  font-family: sans-serif;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  position: relative;
+}
+
+.image-box {
+  text-align: center;
+  width: 100%;
+  /* border: 1px solid red; */
+}
+
+img {
+  width: 100%;
+}
+
+.brand-box > p {
+  font-size: 13px;
+  font-size: 80%;
+}
+
+.price-box {
+  display: flex;
+  margin-left: 3%;
+  margin-top: 3%;
+  padding-bottom: 50px;
+}
+
+.price-box > p {
+  font-size: 12px;
+  font-size: 70%;
+}
+
+#heading-h2 {
+  text-align: center;
+  letter-spacing: 1px;
+  font-size: 28px;
+  font-style: italic;
+  font-weight: bold;
+  /* font-size: 50%; */
+}
+#heading-h4 {
+  margin-left: 15px;
+  letter-spacing: 1px;
+  margin-bottom: 5%;
+}
+
+.discount-color {
+  color: red;
+  font-style: italic;
+  font-size: 12px;
+  font-weight: bold;
+  margin-left: 10px;
+  font-size: 75%;
+}
+
+.price-bold {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.line-on {
+  text-decoration-line: line-through;
+}
+
+.brand-box {
+  line-height: 1.5;
+  padding: 0 3% 0 3%;
+}
+
+.brand-name {
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+
+.shites-men-heading {
+  width: 70%;
+}
+
+.container {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: row;
+}
+#sortBy {
+  width: 100%;
+  display: flex;
+}
+label {
+  margin-left: 60%;
+  font-size: 13px;
+  margin-top: 10px;
+  letter-spacing: 2px;
+  font-size: 75%;
+}
+select {
+  padding: 12px;
+  margin-bottom: 10%;
+  width: 100%;
+  border: 1px solid transparent;
+  border-bottom: 1px solid;
+}
+.shites-men-main {
+  width: 100%;
+  display: flex;
+  margin-top: 10%;
+}
+.filter-box {
+  width: 30%;
+  margin-top: 8%;
+  display: flex;
+}
+.filter-div {
+  width: 60%;
+  height: 100%;
+  margin-left: 30%;
+}
+.all-product {
+  width: 70%;
+}
+#sort {
+  padding: 8px;
+  border-radius: 5px;
+  margin-left: 5%;
+  margin-bottom: 15px;
+  width: 20%;
+  border: 1px solid black;
+}
+.cart-btn {
+  width: 80%;
+  background-color: black;
+  color: aliceblue;
+  border: 1px solid transparent;
+  padding: 2%;
+  bottom: 0;
+  margin-top: 5%;
+  cursor: pointer;
+  margin-bottom: 10%;
+  position: absolute;
+  bottom: -10px;
+  left: 15px;
+}
+.footer {
+  margin-top: 30%;
+}
+@media only screen and (min-width: 376px) and (max-width: 768px) {
+  .main {
+    width: 90%;
+    height: fit-content;
+    display: grid;
+    grid-template-columns: repeat(3, 35%);
+    grid-gap: 2%;
+  }
+  .brand-box > p {
+    font-size: 60%;
+  }
+  .price-box > p {
+    font-size: 50%;
+  }
+  .cart-btn {
+    width: 70%;
+  }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 376px) {
+  .main {
+    width: 100%;
+    height: fit-content;
+    display: grid;
+    grid-template-columns: repeat(2, 65%);
+    grid-gap: 2%;
+  }
+  .brand-box > p {
+    font-size: 70%;
+  }
+  .price-box > p {
+    font-size: 60%;
+  }
+  .cart-btn {
+    width: 100%;
+  }
+  .filter-box {
+    width: 40%;
+    margin-top: 8%;
+    display: flex;
+  }
+  .filter-div {
+    width: 80%;
+    height: 100%;
+    margin-left: 5%;
+  }
+}

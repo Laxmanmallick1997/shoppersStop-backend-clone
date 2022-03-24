@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cart page</title>
+    <link rel="stylesheet" href="./style/cart.css">
+
+    <script src="https://kit.fontawesome.com/742be1b08f.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link rel="stylesheet" href="./style/navbar.css">
+    <link rel="stylesheet" href="./style/footer.css">
+</head>
+
+<body>
+    <div id="navbar"></div>
+
+    <div>
+        <h1 id="cart-name">Cart</h1>
+    </div>
+    <div class="cart-pro">
+        <p>Products</p>
+        <p>Amount</p>
+    </div>
+
+
+    <div class="container">
+
+        <div class="products">
+
+        </div>
+
+        <div class="checkout">
+
+            <div>
+                <div class="summary">
+                    <h3>ORDER SUMMARY</h3>
+                    <input type="text" placeholder="Enter coupon code" id="coupon">
+                    <input type="button" id="apply" value="APPLY">
+                    <p id='invalid'></p>
+                </div>
+
+                <hr>
+
+                <div class="total-box">
+                    <p>Subtotal</p>
+                    <p id="subtotal">0</p>
+                    <p>Delivery charges</p>
+                    <p>FREE</p>
+                    <p>Gift packing</p>
+                    <p>FREE</p>
+                    <p>Discount</p>
+                    <p id="coupon-discount">NA</p>
+                </div>
+
+                <hr>
+
+                <div class="payable-box">
+                    <h4>Payable Amount</h4>
+                    <p id="payable"></p>
+                </div>
+
+                <div class="check">
+                    <input type="button" value="CHECKOUT" id="check-btn">
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div id="footer"></div>
+
+</body>
+
+</html>
+<script src="./scripts/cart.js"></script>
+<script type="module">
+
+    import navbar from "./components/navbar.js";
+
+    var navbarAppend = document.getElementById("navbar");
+
+    navbarAppend.innerHTML = navbar();
+
+    import footer from './components/footer.js'
+
+    let footerEle = document.querySelector('#footer');
+
+    footerEle.innerHTML = footer();
+
+
+
+// let menuBar = document.getElementById('menubar-men');
+</script>

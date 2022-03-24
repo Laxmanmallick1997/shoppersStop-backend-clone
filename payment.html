@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <link rel="stylesheet" href="./style/navbar.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <link rel="stylesheet" href="./style/footer.css">
+</head>
+<style>
+  @import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+  @import url("https://fonts.googleapis.com/css2?family=Sacramento&display=swap");
+
+  * {
+    font-family: "Nunito", sans-serif;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  form {
+    /* border: 1px solid grey; */
+    width: 50%;
+    margin: auto;
+    padding: 1%;
+    box-sizing: border-box;
+  }
+
+  .deMethod,
+  .payMethod {
+    border: 1px solid grey;
+    background-color: rgb(170, 167, 167);
+    padding-left: 1%;
+  }
+
+  .deliveryBtn>button {
+    width: 24.8%;
+    padding: 1.5%;
+    border: 1px solid rgb(196, 194, 194);
+  }
+
+  .deliveryBtn>button:first-child {
+    background-color: transparent;
+    border-bottom: none;
+    border: grey;
+  }
+
+  .inputBox>input {
+    width: 65%;
+  }
+
+  .inputBox>.name {
+    padding: 2%;
+    width: 333px;
+    margin: 10px 0px;
+  }
+
+  .inputLeft {
+    border: 1px solid grey;
+    padding: 1% 1% 5% 1%;
+    /* display: none;  */
+  }
+
+  .inputLeft>.inputBox {
+    width: 58%;
+  }
+
+  .inputLeft>.inputBoxtwo {
+    display: flex;
+    width: 14.5%;
+    gap: 4%;
+    margin: 10px 0px;
+  }
+
+  .inputBoxtwo>input {
+    padding: 6%;
+  }
+
+  .input-box-save {
+    width: 40%;
+    float: right;
+  }
+
+  .save {
+    padding: 3%;
+    width: 200px;
+    font-weight: bold;
+    background-color: tomato;
+    /* border: 1px solid black; */
+    color: white;
+    border: 1px solid transparent;
+    border-radius: 5px;
+  }
+
+  .proceed {
+    width: 200px;
+    font-weight: bold;
+    background-color: tomato;
+    padding: 2%;
+    color: white;
+    margin: 1%;
+    border: 1px solid transparent;
+    border-radius: 5px;
+
+  }
+
+  .inputBoxcheck span {
+    color: red;
+  }
+
+  #midDivMain {
+    display: none;
+    line-height: 4;
+  }
+
+  .mid-div {
+    border: 1px solid grey;
+    display: flex;
+    width: 100%;
+  }
+
+  .mid-left>div {
+    display: flex;
+    border-right: 1px solid grey;
+    border-bottom: 1px solid grey;
+    padding: 1%;
+    width: 200px;
+  }
+
+  .mid-left>div>i {
+    padding: 10%;
+  }
+
+  .mid-right {
+    padding-left: 5%;
+  }
+
+  .selectDateCVV {
+    display: flex;
+    /* border: 1px solid red; */
+    /* gap: 100px; */
+    width: 350px;
+  }
+
+  .selectDateCVV>div>input,
+  .selectDateCVV>div>select {
+    padding: 5%;
+  }
+
+  .selectDateCVV>div {
+    /* border: 1px solid red; */
+    width: 49%;
+    margin-bottom: 2%;
+  }
+
+  .container {
+    width: 28%;
+    margin: auto;
+    display: block;
+  }
+
+  .container>.input-group {
+    padding: 3%;
+  }
+
+  .otpIn {
+    display: none;
+    border: 1px solid grey;
+  }
+
+  #oneTmPs {
+    padding: 2%;
+  }
+
+  #otpSubmit {
+    width: 50%;
+    font-weight: bold;
+    background-color: tomato;
+    padding: 2%;
+    color: white;
+    margin: 1%;
+    border: 1px solid transparent;
+    border-radius: 5px;
+  }
+
+  #margin {
+    margin-top: 6%;
+
+  }
+</style>
+
+<body>
+
+  <div id="navbar">
+
+    <header class="header-div">
+      <div class="navbar-box">
+        <div class="nav-left">
+          <div id="nav-left-icon">
+            <ul>
+              <li>
+                <a href="store.html"><i class="material-icons">store</i>
+                  <p>All Stores</p>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="material-icons">contact_page</i>
+                  <p>Contact us</p>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="nav-logo">
+            <a href="/">
+              <img src="https://prodstatic.shoppersstop.com/_ui/responsive/common/assets/images/logo.svg" alt="" />
+            </a>
+          </div>
+        </div>
+      </div>
+  </div>
+
+
+  </div>
+  <!-- ------------------------------small navbar----------------------------------------- -->
+  <div id="margin">
+
+    <div class="payMainDiv">
+      <form method="post">
+
+        <div class="inputLeft">
+          <div class="deMethod">
+            <h3>DELIVERY METHOD</h3>
+          </div>
+          <div class="deliveryBtn">
+            <button>Delivery Address</button>
+            <button>Express Store Pick Up</button>
+          </div>
+          <div class="inputBoxtwo">
+            <input type="text" required class="name" placeholder="First Name" />
+            <input type="text" required class="name" placeholder="Last Name" />
+          </div>
+
+          <div class="inputBox">
+            <input type="number" required class="name" placeholder="+91 (Enter your 10 digit number)" />
+          </div>
+
+          <div class="inputBox">
+            <input type="number" required class="name" placeholder="pincode" />
+          </div>
+
+          <div class="inputBoxtwo">
+            <input type="text" required class="name" placeholder="City" />
+            <input type="text" required class="name" placeholder="State" />
+          </div>
+
+          <div class="inputBox">
+            <input type="text" required class="name" placeholder="Address Line 1" />
+            <input type="text" required class="name" placeholder="Address Line 2 (Optional)" />
+          </div>
+
+          <div class="inputBoxcheck">
+            <input type="checkbox" required class="name" class="checkbox1" />
+            <label for="checkbox1">Use this as my default delivery address</label>
+          </div>
+          <div class="inputBoxcheck">
+            <input type="checkbox" required class="name" class="checkbox1" />
+            <label for="checkbox2">I agree to the <span>Terms and Condition</span></label>
+            <div class="input-box-save">
+              <button id="pay" class="save" type="submit">
+                SAVE AND PROCEED
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="payMethod">
+          <h3>PAYMENT</h3>
+        </div>
+        <div id="midDivMain">
+
+          <div class="mid-div">
+            <div class="mid-left">
+              <div class="card">
+                <i class="material-icons">credit_card</i>
+                <p>Credit / Debit Card</p>
+              </div>
+              <div class="netbank">
+                <i class="material-icons">account_balance</i>
+                <p>Netbanking</p>
+              </div>
+              <div class="upi">
+                <i class="material-icons">keyboard_double_arrow_right</i>
+
+                <p>UPI</p>
+              </div>
+              <div class="wallets">
+                <i class="material-icons">account_balance_wallet</i>
+                <p>Wallets</p>
+              </div>
+            </div>
+            <div class="mid-right">
+              <h3>Enter Debit / Credit Card Details</h3>
+              <div class="inputBox">
+                <label>Card Number</label>
+                <br />
+                <input type="number" placeholder="Card Number" required class="name" id="cc" />
+              </div>
+              <div class="selectDateCVV">
+                <div class="dateMonth">
+                  <label for="">Expiry</label>
+                  <br>
+                  <select name="" id="">
+                    <option value="">M</option>
+                    <option value="">01</option>
+                    <option value="">02</option>
+                    <option value="">03</option>
+                    <option value="">04</option>
+                    <option value="">05</option>
+                    <option value="">06</option>
+                    <option value="">07</option>
+                    <option value="">08</option>
+                    <option value="">09</option>
+                    <option value="">10</option>
+                    <option value="">11</option>
+                    <option value="">12</option>
+                  </select>
+                  <select name="" id="">
+                    <option value="">Y</option>
+                    <option value="">21</option>
+                    <option value="">22</option>
+                    <option value="">23</option>
+                    <option value="">24</option>
+                    <option value="">25</option>
+                    <option value="">26</option>
+                    <option value="">27</option>
+                    <option value="">28</option>
+                    <option value="">29</option>
+                    <option value="">30</option>
+                  </select>
+                </div>
+
+                <div class="selectCVV">
+                  <label for="">CVV</label>
+                  <br />
+                  <input type="number" placeholder="Card CVV" required class="name" id="cvv" />
+                </div>
+              </div>
+              <div class="inputBoxcheck">
+                <input type="checkbox" required class="name" class="checkbox1" />
+                <label for="checkbox1">Save this card for faster payments</label>
+              </div>
+              <div class="input-group">
+                <div class="input-box-proceed">
+                  <button id="pay" class="proceed" type="submit">
+                    Proceed to pay
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <div class="container otpIn">
+      <div class="input-group">
+        <div class="input-box">
+          <input type="number" placeholder="Enter Otp" required class="name" id="oneTmPs" />
+          <button id="otpSubmit" type="submit">Submit</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+  <div class="footer"></div>
+</body>
+
+</html>
+<script>
+  document.querySelector("form").addEventListener("submit", paymentFunction);
+
+  function paymentFunction(e) {
+    e.preventDefault();
+    var cc = document.getElementById("cc").value;
+    var cvv = document.getElementById("cvv").value;
+
+    if (cc.length == 16 && cvv.length == 3) {
+      alert("Enter Otp = 7575");
+      document.querySelector(".otpIn").style.display = "flex";
+    }
+
+    if (!(cc.length == 16 && cvv.length == 3)) {
+      alert("Incorrect Details");
+    }
+  }
+
+  document.querySelector(".save").addEventListener("click", function () {
+    var midDiv = document.querySelector("#midDivMain");
+    midDiv.style.display = "flex";
+    document.querySelector(".inputLeft").style.display = "none";
+
+
+  });
+
+  document.querySelector(".proceed").addEventListener("click", function () {
+    var otpIn = document.querySelector(".otpIn");
+    otpIn.style.display = "block";
+    document.querySelector("#midDivMain").style.display = "none";
+    document.querySelector(".payMethod").style.display = "none";
+
+
+  })
+
+  document.getElementById("otpSubmit").addEventListener("click", otpFunction);
+
+  function otpFunction(e) {
+    e.preventDefault();
+
+    var valid = document.getElementById("oneTmPs").value;
+    if (valid == 7575) {
+      alert("Payment Successful");
+      alert("Thank You");
+      // redirect to the main page
+      window.location.href = "./index.html";
+    } else {
+      alert("Invalid Otp");
+    }
+  }
+  // redirect to the main page
+  // document.getElementById("otpSubmit").addEventListener("click", function () {
+  //   // add here index.html
+  //   window.location.href = "./index.html";
+  // });
+</script>

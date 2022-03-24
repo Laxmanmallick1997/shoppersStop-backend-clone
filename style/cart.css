@@ -1,0 +1,130 @@
+* {
+  padding: 0px;
+  font-family: sans-serif;
+}
+.container {
+  width: 80%;
+  display: flex;
+  margin: auto;
+  height: fit-content;
+}
+.products {
+  flex: 2;
+  height: fit-content;
+}
+.checkout {
+  flex: 0.6;
+  border: 1px solid black;
+  height: 400px;
+  margin-left: 5%;
+}
+.total-box > p {
+  display: inline-block;
+}
+.total-box {
+  display: grid;
+  grid-template-columns: repeat(2, 85%);
+  padding: 5%;
+  line-height: 2.5;
+}
+.summary {
+  text-align: center;
+  font-family: sans-serif;
+  line-height: 2.5;
+}
+.summary > input[type="button"] {
+  height: 25px;
+}
+.summary > input[type="text"] {
+  height: 22px;
+  width: 65%;
+}
+.payable-box {
+  display: grid;
+  grid-template-columns: repeat(2, 85%);
+  padding: 5%;
+  line-height: 1;
+  font-family: sans-serif;
+}
+.payable-box > p,
+h4 {
+  display: inline-block;
+}
+.check {
+  text-align: center;
+}
+#check-btn {
+  width: 90%;
+  padding: 10px;
+  background-color: rgb(255, 66, 82);
+  color: aliceblue;
+  border-radius: 5px;
+  border: 1px solid transparent;
+  cursor: pointer;
+}
+#apply {
+  background-color: #fff2f0;
+  color: salmon;
+  border: 1px solid rgb(255, 66, 82);
+  cursor: pointer;
+  padding: 2%;
+}
+.cart-products {
+  width: 100%;
+  height: 180px;
+  display: flex;
+  margin-top: 2%;
+  border-radius: 5px;
+}
+.image {
+  width: 15%;
+  height: 90%;
+  margin: auto;
+}
+.brand {
+  width: 40%;
+  height: auto;
+  line-height: 2;
+  margin-left: 3%;
+}
+.price {
+  width: 40%;
+  height: auto;
+  line-height: 2;
+  margin-left: 3%;
+}
+.checkout > div:first-child {
+  width: 90%;
+  margin: auto;
+}
+.image > img {
+  width: 100%;
+  height: 100%;
+}
+#quantityRange {
+  margin-left: 20px;
+}
+.line-on {
+  text-decoration-line: line-through;
+}
+.discount-color {
+  color: red;
+  font-style: italic;
+  font-size: 15px;
+  font-weight: bold;
+  margin-left: 10px;
+}
+#invalid {
+  display: none;
+}
+.cart-pro {
+  width: 40%;
+  margin-left: 18%;
+  display: flex;
+  gap: 65%;
+  line-height: 1;
+}
+#cart-name {
+  line-height: 1;
+  margin-top: 10%;
+}

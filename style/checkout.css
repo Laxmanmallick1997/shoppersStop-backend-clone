@@ -1,0 +1,202 @@
+/* #checkout{
+    height: 800px;
+} */
+
+#checkhead1 {
+  height: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+#checkhead1 i {
+  padding-top: 20px;
+}
+#checkhead1 > #secureIcon {
+  margin-left: 850px;
+  margin-top: 8px;
+  height: 500px;
+}
+#checkhead2 {
+  height: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid whitesmoke;
+  background-color: whitesmoke;
+}
+#checkhead2 h3 {
+  color: tomato;
+}
+#checkhead2 #bag {
+  margin-left: 80%;
+  padding-top: 22px;
+  width: 50px;
+  height: 40px;
+  color: tomato;
+}
+#checkhead2 a {
+  text-decoration: none;
+}
+
+#checkhead3 {
+  display: flex;
+  gap: 50px;
+  height: 50px;
+  width: 70%;
+  margin-left: 30px;
+  background-color: whitesmoke;
+}
+#checkhead3 #change {
+  height: 30px;
+  margin-left: 500%;
+  margin-top: 8px;
+  padding-top: 10px;
+  border: 1px solid white;
+  color: tomato;
+  background-color: white;
+  width: 120%;
+  height: 25px;
+  text-align: center;
+  padding: auto;
+}
+#checkhead3 > #correctSymb {
+  color: rgb(36, 117, 12);
+  padding-top: 20px;
+  padding-left: 10px;
+}
+#checkhead4 {
+  width: 70%;
+  margin-top: 30px;
+  margin-left: 30px;
+  /* border: 1px solid whitesmoke; */
+  display: flex;
+
+  gap: 50px;
+}
+
+#checkhead4 > div {
+  border: 1px solid rgb(167, 159, 159);
+  width: 200px;
+  text-align: center;
+  font-weight: bold;
+  border-bottom: none;
+}
+#checkhead4 a {
+  text-decoration: none;
+  color: black;
+}
+#checkhead4 > #deli {
+  background-color: whitesmoke;
+}
+#checkout2 {
+  width: 70%;
+  height: 700px;
+  margin-top: 40px;
+  margin-left: 30px;
+
+  border: 1px solid rgb(136, 131, 131);
+}
+#checkout2 > div + div {
+  padding-left: 10px;
+  line-height: 2;
+}
+#checkout2 #para1 {
+  border: 1px solid whitesmoke;
+  height: 50px;
+  margin-top: 0px;
+  padding-top: 20px;
+  background-color: whitesmoke;
+  line-height: 2;
+}
+#checkhead5 input {
+  height: 30px;
+  width: 200px;
+  margin-left: 30px;
+}
+#checkhead5 p {
+  margin-left: 30px;
+}
+#checkhead6 {
+  display: flex;
+  gap: 40px;
+  margin-top: 30px;
+  /* border: 1px solid black; */
+  margin-bottom: 30px;
+  margin-left: 30px;
+  line-height: 2;
+}
+#checkhead6 > #para2 {
+  width: 50px;
+  height: 30px;
+  border: 1px solid rgb(196, 189, 189);
+  padding-top: 0px;
+  padding-left: 5px;
+  padding-top: 7px;
+  background-color: whitesmoke;
+  line-height: 2;
+}
+
+#checkhead6 input {
+  height: 30px;
+  width: 350px;
+}
+#checkhead7 input {
+  width: 410px;
+  height: 30px;
+  margin-left: 30px;
+}
+#checkhead8 {
+  margin-top: 20px;
+  margin-left: 30px;
+  line-height: 2;
+}
+#checkhead8 input {
+  height: 30px;
+  width: 200px;
+  background-color: whitesmoke;
+  border-color: rgb(184, 184, 184);
+}
+#checkhead9 input {
+  margin-top: 15px;
+  height: 35px;
+  width: 410px;
+  margin-left: 30px;
+}
+#checkhead10 input {
+  margin-top: 10px;
+  margin-left: 30px;
+}
+#checkhead11 {
+  margin-top: 20px;
+  margin-left: 70%;
+  background-color: tomato;
+  width: 200px;
+  padding: 1%;
+  text-align: center;
+  color: white;
+  border-radius: 5px;
+  line-height: 2;
+}
+#an {
+  text-decoration: none;
+  color: white;
+}
+#checkhead12 {
+  margin-top: 50px;
+  margin-bottom: 100px;
+  height: 50px;
+  width: 67%;
+  background-color: rgb(207, 207, 207);
+  padding-left: 50px;
+  margin-left: 30px;
+  padding-top: 30px;
+  color: rgb(150, 143, 143);
+  line-height: 2;
+}
+#checkout {
+  margin-top: 10%;
+}
+#sign-in,
+#email {
+  margin-top: 2%;
+}

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <link rel="stylesheet" href="./style/navbar.css">
+  <style>
+    .storeContainer {
+      margin: auto;
+      margin-top: 150px;
+      /* border: 1px solid red; */
+      display: flex;
+      height: 500px;
+      width: 80%;
+      gap: 5%;
+    }
+
+    .left-text {
+      /* border: 1px solid green; */
+      flex: 1;
+
+    }
+
+    .left-text p {
+      line-height: 25px;
+    }
+
+    .left-text h4 {
+      margin: 2% 0%;
+      /* border: 1px solid red; */
+
+    }
+
+    .left-text>#city {
+      width: 90%;
+      padding: 3%;
+    }
+
+    .right-map {
+      /* border: 1px solid blue; */
+      flex: 2;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="navbarAppend"></div>
+  <!-- main div  -->
+  <div class="storeContainer">
+    <!-- left div for the text -->
+    <div class="left-text">
+      <h2>FIND A STORE NEAR YOU</h2>
+      <p>Our seamless online and in-store experience allow you to shop, make returns, and earn rewards on all your
+        purchases across brands online or in-store.</p>
+      <h4>Find stores in your city</h4>
+      <select name="selectcity" id="city">
+        <option value="">Select City</option>
+        <option value="">Ahmedabad</option>
+        <option value="">Amritsar</option>
+        <option value="">Assam</option>
+        <option value="">Bengaluru</option>
+        <option value="">Bubhneswar</option>
+        <option value="">Chandigarh</option>
+        <option value="">Chennai</option>
+        <option value="">Cochin</option>
+        <option value="">Coimbatore</option>
+        <option value="">Durgapur</option>
+        <option value="">Gaziabad</option>
+        <option value="">Gurugram</option>
+        <option value="">Hyderabad</option>
+        <option value="">Indore</option>
+        <option value="">Jalandhar</option>
+        <option value="">Kolkata</option>
+        <option value="">Kozikhode</option>
+        <option value="">Latur</option>
+        <option value="">Lucknow</option>
+        <option value="">Mangglore</option>
+        <option value="">Meerut</option>
+        <option value="">Mumbai</option>
+        <option value="">Nai Mumbai</option>
+        <option value="">New Delhi</option>
+        <option value="">Noida</option>
+        <option value="">Panvel</option>
+        <option value="">Pune</option>
+        <option value="">Punjab</option>
+        <option value="">Raipur</option>
+        <option value="">Siliguri</option>
+        <option value="">Thane</option>
+        <option value="">Vadodra</option>
+        <option value="">Varanasi</option>
+        <option value="">Vishakapatnam</option>
+      </select>
+    </div>
+    <!-- right div for the map -->
+    <div class="right-map">
+      <iframe width="100%" height="100%"
+        src="https://www.google.com/maps/embed?origin=mfe&pb=!1m3!2m1!1s2880+Broadway,+India!6i13"
+        frameborder="0"></iframe>
+    </div>
+  </div>
+
+</body>
+
+</html>
+<script type="module">
+
+  import navbar from "./components/navbar.js";
+  console.log("navbar:", navbar);
+
+  var navbarAppend = document.getElementById("navbarAppend");
+
+  navbarAppend.innerHTML = navbar;
+
+  var account_icon = document.getElementById("account-icon");
+  account_icon.addEventListener("mouseenter", showlogin);
+  account_icon.addEventListener("mouseleave", hidelogin);
+
+  var nav_account = document.getElementById("nav-account");
+
+  function showlogin() {
+    nav_account.style.display = "block";
+  }
+
+  function hidelogin() {
+    nav_account.style.display = "none";
+  }
+
+</script>

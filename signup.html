@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+
+  <script src="https://kit.fontawesome.com/e424a3d0f0.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./style/signup.css" />
+</head>
+
+<body>
+  <div id="heading">
+    <h4>SIGN UP</h4>
+    <h5>Create your account on Shoppers Stop</h5>
+  </div>
+
+  <div id="signup">
+    <div class="inputdiv">
+      <i class="fas fa-user icon"></i>
+      <input type="text" placeholder="First Name & Last Name*" class="name" id="user" required />
+    </div>
+
+    <div class="inputdiv">
+      <i class="fas fa-envelope icon"></i>
+      <input type="email" placeholder="Email*" required class="name" id="email" />
+    </div>
+
+    <div class="inputdiv">
+      <i class="fas fa-phone-alt"></i>
+      <input type="mobile" placeholder="Mobile Number(10 digits)*" required class="name" id="mobile" />
+    </div>
+
+    <div class="inputdiv">
+      <i class="fas fa-lock"></i>
+      <input type="password" placeholder="Set a password(min 6 & max 15 characters)*" required class="name" id="pass" />
+    </div>
+    <div class="gender">
+      <i class="fas fa-venus-mars"></i>
+      <div id="radio">
+        <div id="female">
+          <input type="radio" name="gender" id="women" value="Female" />
+          <label for="women">Female</label>
+        </div>
+        <div id="male">
+          <input type="radio" name="gender" id="men" value="Male" />
+          <label for="men">Male</label>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <p class="p" id="message"></p>
+
+  <div id="continue">
+    <button type="submit" id="btn">CONTINUE</button>
+  </div>
+
+  <div id="social">
+    <div id="left"></div>
+    <div id="text">Or via Social Account</div>
+    <div id="rigth"></div>
+  </div>
+
+  <div id="socialAccount">
+    <div id="fb">
+      <a href="https://facebook.com">
+        <img
+          src="https://cdn.icon-icons.com/icons2/1826/PNG/512/4202107facebookfblogosocialsocialmedia-115710_115591.png"
+          width="50px" />
+      </a>
+    </div>
+
+    <div id="google">
+      <a href="https://google.co.in">
+        <img
+          src="https://www.freepnglogos.com/uploads/google-logo-png/google-logo-png-webinar-optimizing-for-success-google-business-webinar-13.png"
+          width="50px" /></a>
+    </div>
+  </div>
+
+  <h3 class="h3">
+    Have an account? <a href="./signin.html">Sign In</a>
+  </h3>
+
+  <p class="p">
+    By signing up you agree to our
+    <a href="https://www.shoppersstop.com/term-condition" target="_blanck">Terms of service</a>
+    & <a href="https://www.shoppersstop.com/privacy">Privacy Policy</a>
+  </p>
+</body>
+
+</html>
+<script src="./scripts/signup.js"></script>

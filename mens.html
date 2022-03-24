@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>men's shirts</title>
+    <script src="https://kit.fontawesome.com/742be1b08f.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link rel="stylesheet" href="./style/footer.css">
+    <link rel="stylesheet" href="./style/mens.css">
+    <link rel="stylesheet" href="./style/navbar.css">
+
+</head>
+
+<body>
+
+    <div id="navbar"></div>
+
+    <div class="shites-men-main">
+
+        <div class="filter-box">
+
+            <div class="filter-div">
+
+                <h4 id="heading-h4">FILTER BY</h4>
+
+
+                <select name="" id="filterbrand" onchange="filterByBrands()">
+                    <option value="brand">BRANDS</option>
+
+                    <option value="ALLEN SOLLY">ALLEN SOLLY</option>
+                    <option value="BEING HUMAN">BEING HUMAN</option>
+                    <option value="SPYKAR">SPYKAR</option>
+                    <option value="LIFE">LIFE</option>
+
+                </select>
+
+                <select id="filterdiscount" onchange="filterByDiscount()">
+                    <option value="all">DISCOUNT</option>
+                    <option value="20">10-20% OFF</option>
+                    <option value="40">20%-40% OFF</option>
+                    <option value="50">50% OFF</option>
+
+                </select>
+                <select name="" id="alpha" onchange="alphasort()">
+                    <option value="">NAME</option>
+                    <option value="asc">A-Z</option>
+                    <option value="dsc">Z-A</option>
+                </select>
+
+                <select>
+                    <option>PRICE</option>
+                    <option>LOW to HIGH</option>
+                    <option>HIGH to LOW</option>
+                </select>
+
+
+            </div>
+        </div>
+
+        <div class="all-product">
+
+            <div class="shites-men-heading">
+                <h2 id="heading-h2"><i>Shirts For Men</i></h2>
+            </div>
+
+            <div id="sortBy">
+
+                <label> <b> SORT BY</b> </label>
+
+                <select id="sort" onchange="numsort()">
+                    <option value="all">Choose</option>
+                    <option value="high">Price - High to Low</option>
+                    <option value="low">Price - Low to High</option>
+                </select>
+            </div>
+
+            <div class="main"></div>
+
+        </div>
+
+    </div>
+
+    <div class="footer"></div>
+
+</body>
+
+</html>
+
+<script src="./scripts/mens.js"></script>
+
+<script type="module">
+
+    import navbar from "./components/navbar.js";
+
+    var navbarAppend = document.getElementById("navbar");
+
+    navbarAppend.innerHTML = navbar();
+
+    import footer from './components/footer.js'
+
+    let footerEle = document.querySelector('.footer');
+
+    footerEle.innerHTML = footer();
+
+
+
+</script>

@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Luxurious+Script&display=swap");
+
+#heading,
+#signup,
+#continue {
+  width: 25%;
+  margin: auto;
+  margin-bottom: 2%;
+  text-align: center;
+}
+#signup {
+  padding: 2%;
+  height: 270px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.name {
+  width: 80%;
+  padding: 5%;
+  border: none;
+}
+.inputdiv {
+  border-bottom: 1px solid rgba(128, 128, 128, 0.171);
+}
+#continue {
+  width: 29%;
+}
+#btn {
+  width: 100%;
+  padding: 4%;
+  background-color: tomato;
+  color: white;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+.fas {
+  color: rgba(128, 128, 128, 0.432);
+}
+.gender {
+  width: 97%;
+  padding: 4% 0 6% 2%;
+  float: left;
+  display: flex;
+}
+#radio {
+  display: flex;
+  width: 80%;
+}
+#female {
+  padding: 0 10% 0 2%;
+}
+
+#social {
+  /* border: 1px solid grey; */
+  display: flex;
+  margin: auto;
+  width: 29%;
+}
+#left,
+#rigth {
+  border: 1px solid rgba(128, 128, 128, 0.3);
+  display: flex;
+  width: 30%;
+  height: 0.5%;
+  margin-top: 10px;
+}
+#text {
+  border: 1px solid grey;
+  display: flex;
+  width: 40%;
+  border-radius: 10px;
+  padding-left: 3%;
+  text-align: center;
+}
+#socialAccount {
+  /* border: 1px solid red; */
+  display: flex;
+  margin: 4%;
+  width: 29%;
+  margin: auto;
+  justify-content: space-between;
+  cursor: pointer;
+}
+#fb,
+#google {
+  padding: 0.5%;
+  margin: 5% 0;
+  width: 43%;
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.h3,
+.p {
+  text-align: center;
+}
+.h3 + p,
+#heading > h5 {
+  font-size: 12px;
+  color: grey;
+}
+p > a,
+.h3 > a {
+  color: tomato;
+}
+#message {
+  color: tomato;
+  font-size: 15px;
+}
